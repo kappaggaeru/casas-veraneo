@@ -1,21 +1,24 @@
 "use client"
 import React from "react";
 import { MenuButton } from "../buttons/menu-button";
+import { useScrollDirection } from "../hooks/useScrollDirection";
+import { ActionButton } from "../buttons/action-button";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+    const { scrollDirection, yAxis } = useScrollDirection()
+
     return (
         <section className={`
             fixed top-0 left-0 right-0
             mx-auto p-4 md:p-6
             flex flex-col overflow-hidden z-40
-            transition-colors duration-300
+            transition-all duration-300 ease-out
+            ${scrollDirection == "down" && yAxis > 600 ? "-translate-y-full" : ""}
         `}>
             <div className="
                 w-full xl:w-[50%] border border-soft-border rounded-2xl
-                mx-auto
-                bg-secondary-500
-                p-2 pl-4 ">
+                mx-auto bg-secondary-500 p-4 ">
                 <section className={`
                     flex flex-col items-center ${isMenuOpen ? "gap-4" : ""}
                     w-full z-10
@@ -50,6 +53,7 @@ export default function Navbar() {
                             <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-primary-400" onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
                             <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-primary-400" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
                         </ul>
+                        <ActionButton text="Reservar" type="primary" />
                     </div>
                 </section>
             </div >

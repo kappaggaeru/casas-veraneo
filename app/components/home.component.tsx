@@ -10,6 +10,7 @@ import Banner from "./banner";
 
 export default function HomeComponent() {
     const { showModal } = useModal()
+    // disables the body content when the modal is open
     useEffect(() => {
         if (showModal) {
             document.body.style.overflow = "hidden"
