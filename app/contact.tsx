@@ -1,5 +1,6 @@
 import { Mail, Navigation, Phone } from "lucide-react";
 import { ContactCard } from "./cards/contact-card";
+import Map from "./map";
 
 export default function Contact() {
     return (
@@ -10,6 +11,7 @@ export default function Contact() {
                 <ContactCard title={"Teléfono"} icon={Phone} text={"+54 9122 41256"} />
                 <ContactCard title={"Correo electronico"} icon={Mail} text={"casa.cala.vg@gmail.com"} />
             </div>
+            <Map />
         </section>
     )
 }

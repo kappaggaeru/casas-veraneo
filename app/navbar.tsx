@@ -11,7 +11,7 @@ export default function Navbar() {
                 <MenuButton />
             </div>
             <div className="hidden md:block">
-                <ul className="flex flex-row gap-4">
+                <ul className="flex flex-row gap-8">
                     <li>Sobre nosotros</li>
                     <li>Galeria</li>
                     <li>Contacto</li>
