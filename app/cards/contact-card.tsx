@@ -10,8 +10,8 @@ interface CardProps {
 export const ContactCard: React.FC<CardProps> = ({ title, icon: Icon, text, color }) => {
     return (
         <div className="flex flex-col gap-4 p-4 bg-soft-gray rounded-lg">
-            <div className="p-2 w-fit items-center bg-default-gray rounded-lg">
-                <Icon className={`size-6 ${color ? color : 'text-sky-300'}`} />
+            <div className="p-2 w-fit items-center rounded-lg">
+                <Icon className={`size-6 ${color ? color : 'text-orange-400'}`} />
             </div>
             <div className="flex flex-col gap-2">
                 <h1 className="text-md font-medium">{title}</h1>

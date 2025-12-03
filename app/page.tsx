@@ -10,7 +10,7 @@ export default function Home() {
     <section className="bg-background text-foreground">
       <Navbar />
       <Hero />
-      <div className="p-4 flex flex-col gap-2">
+      <div className="p-4 flex flex-col gap-8">
         <AboutPreview />
         <FeaturedCard />
         <Contact />

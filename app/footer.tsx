@@ -13,10 +13,6 @@ export default function Footer() {
                 </ul>
             </div>
             <div>
-                <h2>Contacto</h2>
-                <Contact />
-            </div>
-            <div>
                 <p>Sitio desarrollado por</p>
                 <a href="www.lautaroolivera.com">Lautaro Olivera</a>
             </div>
