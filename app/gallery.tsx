@@ -1,7 +1,7 @@
 "use client"
 import React from "react";
 
-export default function FeaturedCard() {
+export default function Gallery() {
     const mockGallery = Array.from({ length: 10 }, (_, i) => ({
         id: i,
         src: `https://picsum.photos/400/300?random=${i + 1}`,
@@ -12,7 +12,7 @@ export default function FeaturedCard() {
     return (
         <section className="flex flex-col gap-4">
             <h2 className="text-xl">Galeria</h2>
-            <div className="w-full rounded-lg overflow-hidden flex items-center justify-center">
+            <div className="w-full rounded-lg overflow-hidden flex items-center justify-center md:h-100">
                 <img
                     src={activeImage.src}
                     alt={activeImage.alt}

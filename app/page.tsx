@@ -1,21 +1,23 @@
 import AboutPreview from "./about-preview";
-import FeaturedCard from "./cards/featured-card";
+import { ActionButton } from "./buttons/action-button";
+import Gallery from "./gallery";
 import Contact from "./contact";
 import Footer from "./footer";
 import Hero from "./hero";
 import Navbar from "./navbar";
 
 export default function Home() {
-  return (
-    <section className="bg-background text-foreground">
-      <Navbar />
-      <Hero />
-      <div className="p-4 flex flex-col gap-8">
-        <AboutPreview />
-        <FeaturedCard />
-        <Contact />
-        <Footer />
-      </div>
-    </section>
-  )
+    return (
+        <section className="bg-background text-foreground">
+            <Navbar />
+            <Hero />
+            <div className="p-4 xl:px-0 flex flex-col gap-8 mx-auto max-w-[1000px]">
+                <ActionButton text="Reservar" href="" type="primary" />
+                <AboutPreview />
+                <Gallery />
+                <Contact />
+            </div>
+            <Footer />
+        </section>
+    )
 }
