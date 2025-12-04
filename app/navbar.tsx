@@ -1,4 +1,4 @@
-import MenuButton from "./buttons/menu-button";
+import { MenuButton } from "./buttons/menu-button";
 
 export default function Navbar() {
     return (
