@@ -7,7 +7,7 @@ interface CardProps {
     color?: string;
 }
 
-export const ContactCard: React.FC<CardProps> = ({ title, icon: Icon, text, color }) => {
+export const InfoCard: React.FC<CardProps> = ({ title, icon: Icon, text, color }) => {
     return (
         <div className="flex flex-col gap-4 p-4 bg-soft-gray rounded-lg">
             <div className="p-2 w-fit items-center rounded-lg">
