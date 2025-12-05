@@ -4,7 +4,7 @@ import Map from "./map";
 
 export default function Contact() {
     return (
-        <section className="flex flex-col gap-6 py-16 px-10 bg-muted-bg" id="contact">
+        <section className="w-full px-10 lg:px-40 xl:px-80 flex flex-col gap-6 py-16 px-10 bg-muted-bg" id="contact">
             <div className="grid gap-4">
                 <h2 className="text-3xl">Contacto</h2>
                 <p className="text-gray-600">

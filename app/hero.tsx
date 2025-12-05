@@ -9,8 +9,8 @@ export default function Hero() {
     return (
         <section>
             <section className="w-full h-screen flex justify-center items-center">
-                <div className="absolute w-full bg-black opacity-25 z-0"></div>
-                <img src={carousel[0].path} alt={carousel[0].alt} className="h-full object-cover z-10"/>
+                <div className="absolute w-screen h-screen bg-black opacity-20 z-10"></div>
+                <img src={carousel[0].path} alt={carousel[0].alt} className="absolute w-screen h-screen object-cover z-5"/>
                 <div className="absolute flex flex-col gap-4 justify-center text-center mx-8 z-20 text-shadow-lg/30">
                     <h1 className="text-white text-5xl font-bold">Casa Cala</h1>
                     <span className="text-white">Villa Gesell</span>

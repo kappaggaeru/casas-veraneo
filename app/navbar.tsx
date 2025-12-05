@@ -22,11 +22,27 @@ export default function Navbar() {
                         </div>
                         {/* Lista desktop */}
                         <div className="hidden md:block">
-                            <ul className="flex gap-4 cursor-pointer">
-                                <li onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
-                                <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
-                                <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
-                                <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
+                            <ul className="flex gap-4 cursor-pointer text-white">
+                                <li
+                                    onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    Servicios
+                                </li>
+                                <li
+                                    onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
+                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    Galeria
+                                </li>
+                                <li
+                                    onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    Sobre nosotros
+                                </li>
+                                <li
+                                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    Contacto
+                                </li>
                             </ul>
                         </div>
                     </div>

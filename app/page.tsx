@@ -11,13 +11,13 @@ export default function Home() {
         <section className="">
             <Navbar />
             <Hero />
-            <div className="xl:px-60 flex flex-col w-full mx-auto ">
+            <div className="flex flex-col w-full mx-auto ">
                 <Services />
                 <Gallery />
                 <About />
                 <Contact />
+                <Footer />
             </div>
-            <Footer />
         </section>
     )
 }
