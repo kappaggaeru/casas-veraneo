@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { MenuButton } from "./buttons/menu-button";
+import { MenuButton } from "../buttons/menu-button";
 
 export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -14,8 +14,7 @@ export default function Navbar() {
                 `}>
                     <div className={`flex flex-row justify-between items-center w-full`}>
                         <div className="flex flex-col justify-between">
-                            <span className="bold">Casa Cala</span>
-                            <span className="text-gray-500">Villa gesell</span>
+                            <span className="text-white font-bold text-4xl">Casa Cala</span>
                         </div>
                         <div className="block md:hidden" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                             <MenuButton isOpen={isMenuOpen} />

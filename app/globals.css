@@ -2,6 +2,7 @@
 @import "tailwindcss";
 
 @theme {
+  /* Verde oscuro */
   --color-primary-100: oklch(0.989 0.010 145.0);
   --color-primary-200: oklch(0.978 0.018 145.0);
   --color-primary-300: oklch(0.956 0.042 145.0);
@@ -21,18 +22,14 @@
   --color-muted-bg: oklch(0.980 0.005 78.3);
   --color-stone-bg: oklch(0.965 0.006 75.4);
 
-  --color-primary-bg: oklch(.35 .05 150);
+  --color-primary-foreground: oklch(0.833 0.000 0);
 }
 
 :root {
-  /* --background: #fdfdfc; */
-  /* --foreground: #3c3c43; */
-  /* --background: oklch(0.98 0.005 85); */
   --background: #f5f6f7;
   --foreground: oklch(0.25 0.01 85);
 
   --muted-foreground: oklch(0.55 0.01 85);
-  --primary-foreground: oklch(.98 .005 85);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
