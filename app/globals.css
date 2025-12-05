@@ -21,6 +21,7 @@
   --color-muted-bg: oklch(0.980 0.005 78.3);
   --color-stone-bg: oklch(0.965 0.006 75.4);
 
+  --color-primary-bg: oklch(.35 .05 150);
 }
 
 :root {
@@ -32,6 +33,7 @@
   --foreground: oklch(0.25 0.01 85);
 
   --muted-foreground: oklch(0.55 0.01 85);
+  --primary-foreground: oklch(.98 .005 85);
 
   --color-background: var(--background);
   --color-foreground: var(--foreground);
