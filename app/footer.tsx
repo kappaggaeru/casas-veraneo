@@ -3,22 +3,38 @@ export default function Footer() {
     return (
         <footer className="w-full px-10 lg:px-40 xl:px-80 bg-primary-bg text-white flex flex-col py-16">
             <div className="grid md:grid-cols-2 gap-8 mx-auto w-full">
-                <div className="grid gap-2">
+                <div className="flex flex-col gap-4">
                     <p className="text-xl font-bold">Casa Cala</p>
                     <p className="text-[#faf8f5cc] text-sm md:text-base text-pretty">Tu hogar de verano a pasos del mar. Creando recuerdos inolvidables desde hace más de 30 años.</p>
                 </div>
                 <div className="grid gap-4">
                     <p className="text-lg font-medium">Enlaces rapidos</p>
-                    <ul className="font-normal text-sm grid gap-2 text-[#faf8f5cc] 4 cursor-pointer">
-                        <li onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
-                        <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
-                        <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
-                        <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
+                    <ul className="font-normal text-sm grid gap-2 text-[#faf8f5cc] 4">
+                        <li
+                            onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
+                            className="cursor-pointer w-fit">
+                            Servicios
+                        </li>
+                        <li
+                            onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
+                            className="cursor-pointer w-fit">
+                            Galeria
+                        </li>
+                        <li
+                            onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
+                            className="cursor-pointer w-fit">
+                            Sobre nosotros
+                        </li>
+                        <li
+                            onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
+                            className="cursor-pointer w-fit">
+                            Contacto
+                        </li>
                     </ul>
                 </div>
             </div>
             <div className="w-full h-[0.1px] my-8 bg-white opacity-10"></div>
-            <div className="pt-8 text-center text-sm text-[#faf8f5cc]">
+            <div className="text-center text-sm text-[#faf8f5cc]">
                 <p>© {new Date().getFullYear()} Casa Cala Villa Gesell. Todos los derechos reservados.</p>
             </div>
             <div className="mt-8 text-center text-[#faf8f5cc]">

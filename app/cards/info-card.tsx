@@ -10,7 +10,7 @@ interface CardProps {
 export const InfoCard: React.FC<CardProps> = ({ title, icon: Icon, description, color }) => {
     return (
         <article className="bg-muted-bg shadow-sm p-4 rounded-xl ">
-            <div className="pt-6">
+            <div className="py-6">
                 <div className="flex flex-col items-center text-center">
                     <div className="mb-4 p-3 bg-primary/10 rounded-lg bg-primary-200">
                         <Icon className={`h-8 w-8 ${color ? color : "text-primary-1200"}`} />
