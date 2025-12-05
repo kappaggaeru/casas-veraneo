@@ -1,7 +1,7 @@
 
 export default function Footer() {
     return (
-        <footer className="bg-soft-gray flex flex-col px-4 py-8 mt-8">
+        <footer className="bg-primary-1200 text-white flex flex-col px-4 py-8 mt-8">
             <div className="flex flex-col gap-4 mx-auto max-w-[1000px] w-full">
                 <h1 className="text-xl font-bold">Casa Cala</h1>
                 <div>

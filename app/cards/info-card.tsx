@@ -3,20 +3,22 @@ import { LucideIcon } from "lucide-react"
 interface CardProps {
     title: string;
     icon: LucideIcon;
-    text: string;
+    description: string;
     color?: string;
 }
 
-export const InfoCard: React.FC<CardProps> = ({ title, icon: Icon, text, color }) => {
+export const InfoCard: React.FC<CardProps> = ({ title, icon: Icon, description, color }) => {
     return (
-        <div className="flex flex-col gap-4 p-4 bg-soft-gray rounded-lg">
-            <div className="p-2 w-fit items-center rounded-lg">
-                <Icon className={`size-6 ${color ? color : 'text-orange-400'}`} />
+        <article className="bg-muted-bg shadow-sm p-4 rounded-xl ">
+            <div className="pt-6">
+                <div className="flex flex-col items-center text-center">
+                    <div className="mb-4 p-3 bg-primary/10 rounded-lg bg-primary-200">
+                        <Icon className={`h-8 w-8 ${color ? color : "text-primary-1200"}`} />
+                    </div>
+                    <h3 className="font-semibold mb-2 text-balance">{title}</h3>
+                    <p className="text-sm text-muted-foreground text-gray-600">{description}</p>
+                </div>
             </div>
-            <div className="flex flex-col gap-2">
-                <h1 className="text-md font-medium">{title}</h1>
-                <p className="text-sm font-light text-gray-400">{text}</p>
-            </div>
-        </div>
+        </article>
     )
 }

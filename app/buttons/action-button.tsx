@@ -12,9 +12,9 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, href, type, on
         <>
             {type === 'primary' && (
                 <button className="
-                w-full bg-primary-600 p-4 shadow-lg rounded-xl
+                w-full bg-primary-1200 p-4 shadow-lg rounded-xl text-white
                 cursor-pointer font-medium text-foreground
-                hover:bg-primary-500"
+                hover:bg-primary-1100"
                     onClick={onClick}>
                     {text}
                 </button>
@@ -30,7 +30,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, href, type, on
             )}
             {type === 'tertiary' && (
                 <button className="
-                    w-fit cursor-pointer font-medium text-primary-500 text-center inline-block"
+                    w-fit cursor-pointer font-medium text-primary-1200 text-center inline-block"
                     onClick={onClick}>
                     {text}
                 </button>
