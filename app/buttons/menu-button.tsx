@@ -7,7 +7,7 @@ type MenuButtonProps = {
 }
 export const MenuButton: React.FC<MenuButtonProps> = ({ isOpen }) => {
     return (
-        <div className="relative flex flex-col gap-2 justify-center items-center cursor-pointer p-6 bg-muted-bg rounded-full">
+        <div className="relative flex flex-col gap-2 justify-center items-center cursor-pointer p-6 rounded-full">
             <span className={`
                 w-6 h-0.5 rounded-md bg-gray-600
                 absolute
