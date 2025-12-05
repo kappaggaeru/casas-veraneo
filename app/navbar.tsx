@@ -9,7 +9,7 @@ export default function Navbar() {
             <div className="w-full mx-auto max-w-[1000px]">
                 <section className={`
                     flex flex-col items-center ${isMenuOpen ? "gap-4" : "gap-1"}
-                    p-4 w-full z-10 border-b border-gray-200
+                    p-4 w-full z-10
                     transition-all duration-300
                 `}>
                     <div className={`flex flex-row justify-between items-center w-full`}>
@@ -22,11 +22,11 @@ export default function Navbar() {
                         </div>
                         {/* Lista desktop */}
                         <div className="hidden md:block">
-                            <ul className="flex gap-4">
-                                <li>Sobre nosotros</li>
-                                <li>Galeria</li>
-                                <li>Contacto</li>
-                                <li>Servicios</li>
+                            <ul className="flex gap-4 cursor-pointer">
+                                <li onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
+                                <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
+                                <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
+                                <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
                             </ul>
                         </div>
                     </div>
@@ -36,10 +36,10 @@ export default function Navbar() {
                             ${isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"}
                         `}>
                         <ul className="flex flex-col gap-4">
-                            <li>Sobre nosotros</li>
-                            <li>Galeria</li>
-                            <li>Contacto</li>
-                            <li>Servicios</li>
+                            <li onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
+                            <li onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
+                            <li onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
+                            <li onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
                         </ul>
                     </div>
                 </section>

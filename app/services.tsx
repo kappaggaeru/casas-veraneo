@@ -45,7 +45,7 @@ export default function Services() {
         },
     ]
     return (
-        <section className="flex flex-col gap-6 py-16 px-10 bg-stone-bg">
+        <section className="flex flex-col gap-6 py-16 px-10 bg-stone-bg" id="services">
             <div className="grid gap-4">
                 <h2 className="text-3xl">Servicios disponibles</h2>
                 <p className="text-gray-600">Todo lo que necesitás para disfrutar de unas vacaciones</p>

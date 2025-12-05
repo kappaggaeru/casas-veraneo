@@ -28,8 +28,7 @@
   /* --background: #fdfdfc; */
   /* --foreground: #3c3c43; */
   /* --background: oklch(0.98 0.005 85); */
-  /* --background: #f5f6f7; */
-  --background: #ff00aa;
+  --background: #f5f6f7;
   --foreground: oklch(0.25 0.01 85);
 
   --muted-foreground: oklch(0.55 0.01 85);
