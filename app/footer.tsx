@@ -34,7 +34,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="w-full h-[0.1px] my-8 bg-white opacity-10"></div>
-            <div className="text-center text-sm text-[#faf8f5cc]">
+            <div className="text-center text-sm text-[#faf8f5cc] text-pretty">
                 <p>© {new Date().getFullYear()} Casa Cala Villa Gesell. Todos los derechos reservados.</p>
             </div>
             <div className="mt-8 text-center text-[#faf8f5cc]">
