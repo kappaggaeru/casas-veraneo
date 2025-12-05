@@ -4,7 +4,7 @@ export default function Footer() {
         <footer className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 bg-primary-1200 text-white flex flex-col py-16">
             <div className="grid md:grid-cols-2 gap-8 mx-auto w-full">
                 <div className="flex flex-col gap-4">
-                    <p className="text-4xl font-bold">Casa Cala</p>
+                    <p className="font-meow-script text-4xl font-bold">Casa Cala</p>
                     <p className="text-primary-foreground text-sm md:text-base text-pretty">Tu hogar de verano a pasos del mar. Creando recuerdos inolvidables desde hace más de 30 años.</p>
                 </div>
                 <div className="grid gap-4">

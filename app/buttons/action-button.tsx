@@ -2,12 +2,11 @@ import React from 'react';
 
 interface ActionButtonProps {
     text: string;
-    href?: string;
     type: 'primary' | 'secondary' | 'tertiary';
     onClick?: () => void
 }
 
-export const ActionButton: React.FC<ActionButtonProps> = ({ text, href, type, onClick }) => {
+export const ActionButton: React.FC<ActionButtonProps> = ({ text, type, onClick }) => {
     return (
         <>
             {type === 'primary' && (
