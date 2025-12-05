@@ -1,7 +1,7 @@
 "use client"
 export default function Footer() {
     return (
-        <footer className="w-full px-10 lg:px-40 xl:px-80 bg-primary-bg text-white flex flex-col py-16">
+        <footer className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 bg-primary-bg text-white flex flex-col py-16">
             <div className="grid md:grid-cols-2 gap-8 mx-auto w-full">
                 <div className="flex flex-col gap-4">
                     <p className="text-xl font-bold">Casa Cala</p>

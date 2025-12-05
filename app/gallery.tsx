@@ -10,12 +10,12 @@ export default function Gallery() {
     const [activeImage, setActiveImage ] = React.useState(mockGallery[0]);
 
     return (
-        <section className="w-full px-10 lg:px-40 xl:px-80 flex flex-col gap-4 py-16 bg-muted-bg" id="gallery">
+        <section className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 flex flex-col gap-4 py-16 bg-muted-bg" id="gallery">
             <div className="grid gap-4">
                 <h2 className="text-3xl">Galeria</h2>
                 <p className="text-gray-600">Explorá cada rincón de nuestras casas de verano</p>
             </div>
-            <div className="w-full rounded-lg overflow-hidden flex items-center justify-center md:h-100">
+            <div className="w-full rounded-lg overflow-hidden flex items-center justify-center">
                 <img
                     src={activeImage.src}
                     alt={activeImage.alt}

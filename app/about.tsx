@@ -14,7 +14,7 @@ export default function About() {
         }
     ]
     return (
-        <section className="w-full px-10 lg:px-40 xl:px-80 flex flex-col gap-4 py-12 bg-stone-bg" id="about">
+        <section className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 flex flex-col gap-4 py-12 bg-stone-bg" id="about">
             <h2 className="text-3xl">Casa Cala</h2>
             <div className="flex flex-col gap-4 text-gray-500">
                 <p className="text-pretty">Desde hace más de 30 años, nuestra familia ha compartido la pasión por Villa Gesell y la costa argentina. Lo que comenzó como una casa de verano familiar se ha transformado en un conjunto de propiedades cuidadosamente diseñadas para ofrecer la mejor experiencia vacacional.</p>
