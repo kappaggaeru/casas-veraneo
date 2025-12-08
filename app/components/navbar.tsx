@@ -7,7 +7,7 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
         <section className="absolute left-0 right-0 bg-white/50 w-full flex flex-col overflow-hidden backdrop-blur-3xl z-40 brightness-100">
-            <div className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80">
+            <div className="w-full lg:px-20 xl:px-60 2xl:px-80">
                 <section className={`
                     flex flex-col items-center ${isMenuOpen ? "gap-4" : "gap-1"}
                     p-4 w-full z-10

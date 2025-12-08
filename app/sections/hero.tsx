@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from "react"
 import { ActionButton } from "../buttons/action-button"
+import { Carousel } from "../components/carousel";
 
 export default function Hero() {
     const [inView, setInView] = React.useState([false, false, false]);
@@ -34,7 +35,9 @@ export default function Hero() {
         <section>
             <section className="w-full h-screen flex justify-center items-center">
                 <div className="absolute h-screen bg-black opacity-20 z-10"></div>
-                <img src={carousel[0].path} alt={carousel[0].alt} className="absolute w-screen h-screen object-cover z-5" />
+                <div className="relative w-full h-full z-5">
+                    <Carousel images={carousel} />
+                </div>
                 <div className="absolute flex flex-col gap-4 justify-center text-center mx-8 z-20 text-shadow-lg/30">
                     <div className={`
                         transition-all duration-500
