@@ -7,10 +7,10 @@ export default function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = React.useState(false);
     return (
         <section className="absolute left-0 right-0 bg-white/50 w-full flex flex-col overflow-hidden backdrop-blur-3xl z-40 brightness-100">
-            <div className="w-full lg:px-20 xl:px-60 2xl:px-80">
+            <div className="w-full px-6 py-4 md:px-10 lg:px-20 xl:px-60 2xl:px-80">
                 <section className={`
                     flex flex-col items-center ${isMenuOpen ? "gap-4" : "gap-1"}
-                    p-4 w-full z-10
+                    w-full z-10
                     transition-all duration-300
                 `}>
                     <div className={`flex flex-row justify-between items-center w-full`}>
@@ -22,25 +22,21 @@ export default function Navbar() {
                         </div>
                         {/* Lista desktop */}
                         <div className="hidden md:block">
-                            <ul className="flex gap-4 cursor-pointer text-white">
+                            <ul className="flex gap-4 cursor-pointer">
                                 <li
-                                    onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
-                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>
                                     Servicios
                                 </li>
                                 <li
-                                    onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}
-                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>
                                     Galeria
                                 </li>
                                 <li
-                                    onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}
-                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>
                                     Sobre nosotros
                                 </li>
                                 <li
-                                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}
-                                    className="hover:text-primary-1100 transition-colors duration-300">
+                                    onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
                                     Contacto
                                 </li>
                             </ul>
