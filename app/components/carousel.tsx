@@ -1,6 +1,7 @@
 "use client"
 import React, { useEffect } from "react"
 
+
 type CarouselProps = {
     images: ImageCarousel[],
     autoPlay?: boolean,
@@ -10,7 +11,7 @@ type ImageCarousel = {
     path: string,
     alt: string
 }
-export const Carousel: React.FC<CarouselProps> = ({images, autoPlay = true}) => {
+export const Carousel: React.FC<CarouselProps> = ({ images, autoPlay = true }) => {
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
     useEffect(() => {
