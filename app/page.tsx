@@ -1,26 +1,16 @@
 "use client"
-import About from "./sections/about";
-import Contact from "./sections/contact";
-import Footer from "./sections/footer";
 import Hero from "./sections/hero";
-import Services from "./sections/services";
 import Navbar from "./components/navbar";
-import GalleryModal from "./components/gallery-modal";
 import { ModalProvider } from "./contexts/modal-context";
+import HomeComponent from "./components/home.component";
 
 export default function Home() {
     return (
         <ModalProvider>
-            <section className="">
+            <section>
                 <Navbar />
                 <Hero />
-                <div className="flex flex-col w-full mx-auto ">
-                    <About />
-                    <Services />
-                    <GalleryModal />
-                    <Contact />
-                    <Footer />
-                </div>
+                <HomeComponent />
             </section>
         </ModalProvider>
     )

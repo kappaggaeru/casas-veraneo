@@ -9,7 +9,7 @@ export default function Footer() {
                 </div>
                 <div className="grid gap-4">
                     <p className="text-lg font-medium">Enlaces rapidos</p>
-                    <ul className="font-normal text-sm grid gap-2 text-primary-foreground 4">
+                    <ul className="font-normal text-sm grid gap-2 text-primary-foreground">
                         <li
                             onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}
                             className="cursor-pointer w-fit">

@@ -7,16 +7,23 @@ export interface Slide {
 
 interface ModalContextType {
     showModal: boolean
-    slide: Slide | null
+    slides: Slide[]
+    index: number
     toggleModal: () => void
-    setCurrentSlide: (slide: Slide | null) => void
+    changeIndex: (index: number) => void
 }
 
 const ModalContext = createContext<ModalContextType | undefined>(undefined)
 
 export const ModalProvider = ({ children }: { children: ReactNode }) => {
     const [showModal, setShowModal] = useState(false)
-    const [slide, setSlide] = useState<Slide | null>(null)
+    const [index, setIndex] = useState<number>(0)
+    const slides: Slide[] = [
+        { path: "images/fachada.png", alt: "fachada" },
+        { path: "images/living-comedor.png", alt: "living" },
+        { path: "images/patio.png", alt: "patio" },
+        { path: "images/vista-mar.png", alt: "vista" },
+    ]
 
     const toggleModal = () => {
         setShowModal(prevShowModal => {
@@ -24,16 +31,19 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
         })
     }
 
-    const setCurrentSlide = (slide: Slide | null) => {
-        setSlide(slide)
+    const changeIndex = (index: number) => {
+        if (index > -1 && index <= slides.length) {
+            setIndex(index)
+        }
     }
 
     return (
         <ModalContext value={{
             showModal,
-            slide,
+            slides,
+            index,
             toggleModal,
-            setCurrentSlide
+            changeIndex
         }}>
             {children}
         </ModalContext>

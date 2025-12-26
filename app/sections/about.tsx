@@ -1,4 +1,4 @@
-import Gallery from "../components/gallery"
+import GridGallery from "../components/grid-gallery"
 
 export default function About() {
     const specs = [
@@ -37,8 +37,8 @@ export default function About() {
                 <p className="text-pretty">Ubicadas en una de las zonas más privilegiadas de Villa Gesell, nuestras casas combinan el confort moderno con el encanto playero característico de la región. Cada detalle ha sido pensado para que vos y tu familia se sientan como en casa, pero con el plus de estar a pasos del mar.</p>
                 <p className="text-pretty">Hoy seguimos manteniendo ese espíritu familiar y cálido que nos caracteriza, ofreciendo no solo un lugar donde alojarse, sino un verdadero hogar de verano donde crear recuerdos que durarán toda la vida.</p>
             </div>
-            <Gallery />
-            {/* {Specs} */}
+            {Specs}
+            <GridGallery />
         </section>
     )
 }
