@@ -20,7 +20,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, type, onClick 
             )}
             {type === 'secondary' && (
                 <button className="
-                    w-full bg-secondary-200 py-4 shadow-lg rounded-xl
+                    w-full bg-white py-4 shadow-lg rounded-xl text-primary-1200
                     cursor-pointer font-medium text-foreground text-center inline-block
                     hover:bg-secondary-300"
                     onClick={onClick}>
@@ -29,7 +29,7 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, type, onClick 
             )}
             {type === 'tertiary' && (
                 <button className="
-                    w-fit cursor-pointer font-medium text-primary-1200 text-center inline-block"
+                    w-fit cursor-pointer font-medium text-white text-center inline-block"
                     onClick={onClick}>
                     {text}
                 </button>

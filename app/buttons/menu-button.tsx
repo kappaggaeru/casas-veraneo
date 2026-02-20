@@ -9,16 +9,16 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ isOpen }) => {
     return (
         <div className="relative flex flex-col gap-2 justify-center items-center cursor-pointer p-6 rounded-full">
             <span className={`
-                w-6 h-0.5 rounded-md bg-gray-600
+                w-6 h-0.5 rounded-md
                 absolute
-                transition-transform duration-300 origin-center 
-                ${isOpen ? "-rotate-45" : "rotate-0 translate-y-1.5"}
+                transition-all duration-300 origin-center
+                ${isOpen ? "-rotate-45 bg-gray-200" : "bg-gray-600 rotate-0 translate-y-1.5"}
             `}></span>
             <span className={`
-                w-6 h-0.5 rounded-md bg-gray-600
+                w-6 h-0.5 rounded-md
                 absolute
-                transition-transform duration-300 origin-center
-                ${isOpen ? "rotate-45" : "rotate-0 -translate-y-1.5"}
+                transition-all duration-300 origin-center
+                ${isOpen ? "rotate-45 bg-gray-200" : "bg-gray-600 rotate-0 -translate-y-1.5"}
             `}></span>
         </div>
     )
