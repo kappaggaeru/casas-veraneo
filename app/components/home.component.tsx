@@ -6,6 +6,7 @@ import Footer from "../sections/footer";
 import Services from "../sections/services";
 import GalleryModal from "./gallery-modal";
 import { useModal } from "../contexts/modal-context";
+import Banner from "./banner";
 
 export default function HomeComponent() {
     const { showModal } = useModal()
@@ -19,6 +20,7 @@ export default function HomeComponent() {
 
     return (
         <div className="flex flex-col w-full mx-auto ">
+            <Banner />
             <About />
             <Services />
             <GalleryModal />

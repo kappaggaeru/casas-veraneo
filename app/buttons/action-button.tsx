@@ -11,9 +11,10 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, type, onClick 
         <>
             {type === 'primary' && (
                 <button className="
-                w-full bg-primary-1200 p-4 shadow-lg rounded-xl text-white
+                w-full bg-primary-500 p-4 shadow-lg rounded-xl text-white
                 cursor-pointer font-medium text-foreground
-                hover:bg-primary-1100"
+                transition-colors duration-300
+                hover:bg-primary-400"
                     onClick={onClick}>
                     {text}
                 </button>

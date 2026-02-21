@@ -21,7 +21,7 @@ export default function About() {
             <div key={index} className='p-4'>
                 <div className='flex justify-center'>
                     <div className="flex flex-col gap-2 text-center">
-                        <h2 className="text-primary-1200 text-2xl font-bold">{s.title}</h2>
+                        <h2 className="text-primary-500 text-2xl font-bold">{s.title}</h2>
                         <span className="text-gray-500">{s.description}</span>
                     </div>
                 </div>
@@ -31,7 +31,7 @@ export default function About() {
 
     return (
         <section className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 flex flex-col gap-8 py-12 bg-stone-bg" id="about">
-            <h2 className="text-3xl text-primary-1200 font-medium">Nuestra casa</h2>
+            <h2 className="text-3xl text-primary-500 font-bold tracking-tighter">Nuestra casa</h2>
             <div className="flex flex-col gap-4 text-gray-500">
                 <p className="text-pretty">Desde hace más de 30 años, nuestra familia ha compartido la pasión por Villa Gesell y la costa argentina. Lo que comenzó como una casa de verano familiar se ha transformado en un conjunto de propiedades cuidadosamente diseñadas para ofrecer la mejor experiencia vacacional.</p>
                 <p className="text-pretty">Ubicadas en una de las zonas más privilegiadas de Villa Gesell, nuestras casas combinan el confort moderno con el encanto playero característico de la región. Cada detalle ha sido pensado para que vos y tu familia se sientan como en casa, pero con el plus de estar a pasos del mar.</p>

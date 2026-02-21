@@ -6,7 +6,7 @@ export default function Contact() {
     return (
         <section className="w-full px-10 lg:px-20 xl:px-60 2xl:px-80 flex flex-col gap-6 py-16 bg-muted-bg" id="contact">
             <div className="grid gap-4">
-                <h2 className="text-3xl text-primary-1200 font-medium">Contacto</h2>
+                <h2 className="text-3xl text-primary-500 font-bold tracking-tighter">Contacto</h2>
                 <p className="text-gray-600">
                     Estamos listos para ayudarte a planificar tus próximas vacaciones
                 </p>
