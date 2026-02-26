@@ -10,9 +10,9 @@ export default function Footer() {
                 <div className="grid gap-4">
                     <p className="text-lg font-medium">Enlaces rapidos</p>
                     <ul className="font-normal grid gap-2 text-primary-foreground">
-                        <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
-                        <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
                         <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("about")?.scrollIntoView({ behavior: "smooth" })}>Sobre nosotros</li>
+                        <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("gallery")?.scrollIntoView({ behavior: "smooth" })}>Galeria</li>
+                        <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })}>Servicios</li>
                         <li className="hover:cursor-pointer font-medium w-fit pl-0 p-2 hover:text-white" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>Contacto</li>
                     </ul>
                 </div>

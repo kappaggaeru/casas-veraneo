@@ -9,7 +9,7 @@ export const MenuButton: React.FC<MenuButtonProps> = ({ isOpen }) => {
     return (
         <div className="
             relative flex flex-col gap-2 justify-center items-center
-            cursor-pointer p-6 rounded-lg hover:bg-gray-300
+            cursor-pointer p-6 rounded-lg hover:bg-gray-300 active:bg-gray-300
             transition-colors duration-300
         ">
             <span className={`
