@@ -9,11 +9,11 @@ interface CardProps {
 
 export const InfoCard: React.FC<CardProps> = ({ title, icon: Icon, description, color }) => {
     return (
-        <article className="bg-muted-bg shadow-sm p-4 rounded-xl ">
+        <article className="bg-white shadow-sm p-4 rounded-xl ">
             <div className="py-6">
                 <div className="flex flex-col items-center text-center">
-                    <div className="mb-4 p-3 bg-primary/10 rounded-lg bg-primary-200">
-                        <Icon className={`h-8 w-8 ${color ? color : "text-primary-1200"}`} />
+                    <div className="mb-4 p-3 rounded-lg bg-primary-100 border border-soft-border">
+                        <Icon className={`h-8 w-8 ${color ? color : "text-primary-500"}`} />
                     </div>
                     <h3 className="font-semibold mb-2 text-balance">{title}</h3>
                     <p className="text-sm text-muted-foreground text-gray-600">{description}</p>

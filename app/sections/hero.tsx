@@ -33,12 +33,13 @@ export default function Hero() {
     ]
     return (
         <section>
-            <section className="w-full h-screen flex justify-center items-center">
-                <div className="absolute h-screen bg-black opacity-20 z-10"></div>
-                <div className="relative w-full h-full z-5">
+            <section className="relative w-full h-screen flex justify-center items-center">
+                <div className="absolute w-full h-full z-10 opacity-40 bg-black">
+                </div>
+                <div className="absolute w-full h-full z-5">
                     <Carousel images={carousel} />
                 </div>
-                <div className="absolute flex flex-col gap-4 justify-center text-center mx-8 z-20 text-shadow-lg/30">
+                <div className="absolute flex flex-col gap-4 justify-center text-center mx-8 z-20 text-shadow-lg/50">
                     <div className={`
                         transition-all duration-500
                         ${inView[0] ? "translate-y-0 blur-none opacity-100" : "translate-y-6 blur-sm opacity-0"}`}
