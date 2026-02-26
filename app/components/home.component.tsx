@@ -4,7 +4,6 @@ import About from "../sections/about";
 import Contact from "../sections/contact";
 import Footer from "../sections/footer";
 import Services from "../sections/services";
-import GalleryModal from "./gallery-modal";
 import { useModal } from "../contexts/modal-context";
 import Banner from "./banner";
 
@@ -24,7 +23,6 @@ export default function HomeComponent() {
             <Banner />
             <About />
             <Services />
-            <GalleryModal />
             <Contact />
             <Footer />
         </div>

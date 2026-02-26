@@ -33,7 +33,7 @@ export default function Hero() {
     ]
     return (
         <section>
-            <section className="w-full h-screen flex justify-center items-center">
+            <section className="relative w-full h-screen flex justify-center items-center">
                 <div className="absolute w-full h-full z-10 opacity-40 bg-black">
                 </div>
                 <div className="absolute w-full h-full z-5">

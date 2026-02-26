@@ -1,8 +1,9 @@
 import { createContext, ReactNode, useContext, useState } from "react";
 
 export interface Slide {
-    path: string
-    alt: string
+    id: number
+    source: string
+    caption: string
 }
 
 interface ModalContextType {
@@ -19,10 +20,10 @@ export const ModalProvider = ({ children }: { children: ReactNode }) => {
     const [showModal, setShowModal] = useState(false)
     const [index, setIndex] = useState<number>(0)
     const slides: Slide[] = [
-        { path: "images/fachada.png", alt: "fachada" },
-        { path: "images/living-comedor.png", alt: "living" },
-        { path: "images/patio.png", alt: "patio" },
-        { path: "images/vista-mar.png", alt: "vista" },
+        { id: 1, source: "images/fachada.png", caption: "fachada" },
+        { id: 2, source: "images/living-comedor.png", caption: "living" },
+        { id: 3, source: "images/patio.png", caption: "patio" },
+        { id: 4, source: "images/vista-mar.png", caption: "vista" },
     ]
 
     const toggleModal = () => {
