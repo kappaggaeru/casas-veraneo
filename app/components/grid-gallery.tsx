@@ -16,7 +16,7 @@ export default function GridGallery() {
                     key={index}
                     src={i.path}
                     alt={i.alt}
-                    className="rounded-lg cursor-pointer"
+                    className="rounded-lg cursor-pointer custom-box-shadow hover:scale-101 transition-all duration-300"
                     onClick={() => viewSlide(index)}
                 />
             ))}

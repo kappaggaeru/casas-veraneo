@@ -34,9 +34,9 @@ export default function Hero() {
     return (
         <section>
             <section className="w-full h-screen flex justify-center items-center">
-                <div className="absolute w-full h-full z-10 opacity-30 bg-black">
+                <div className="absolute w-full h-full z-10 opacity-40 bg-black">
                 </div>
-                <div className="relative w-full h-full z-5">
+                <div className="absolute w-full h-full z-5">
                     <Carousel images={carousel} />
                 </div>
                 <div className="absolute flex flex-col gap-4 justify-center text-center mx-8 z-20 text-shadow-lg/50">
