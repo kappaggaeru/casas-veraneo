@@ -59,7 +59,13 @@ export default function Hero() {
                         transition-all duration-500
                         ${inView[2] ? "translate-y-0 blur-none opacity-100" : "translate-y-6 blur-sm opacity-0"}`}
                     >
-                        <ActionButton text="Reservá ahora" type="primary" />
+                        <a
+                            href="https://wa.me/123456789"
+                            rel="noopener"
+                            target="_blank"
+                        >
+                            <ActionButton text="Reservá ahora" type="primary" />
+                        </a>
                     </div>
                 </div>
             </section>

@@ -105,7 +105,7 @@ export default function GridGallery() {
     }, [selected, navigate]);
 
     return (
-        <div style={{
+        <div id="gallery" style={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
@@ -121,7 +121,7 @@ export default function GridGallery() {
                     width: "min(100%, 1100px)",
                     gap: "1rem",
                 }}
-                className="grid-cols-2 md:grid-cols-4"
+                className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4"
             >
                 {slides.map((img, i) => (
                     <motion.div

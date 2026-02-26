@@ -12,9 +12,15 @@ export default function Contact() {
                 </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 md:grid-cols-3">
-                <InfoCard title={"Ubicación"} icon={Navigation} description={"Villa gesell 102 - 5"} />
-                <InfoCard title={"Teléfono"} icon={Phone} description={"+54 9122 41256"} />
-                <InfoCard title={"Correo electronico"} icon={Mail} description={"casa.cala.vg@gmail.com"} />
+                <a href="https://maps.app.goo.gl/jiyTF7feRCV132KW8">
+                    <InfoCard title={"Ubicación"} icon={Navigation} description={"Villa gesell 102 - 5"} />
+                </a>
+                <a href="tel:+54 9122 41256">
+                    <InfoCard title={"Teléfono"} icon={Phone} description={"+54 9122 41256"} />
+                </a>
+                <a href="mailto:casa.cala.vg@gmail.com">
+                    <InfoCard title={"Correo electronico"} icon={Mail} description={"casa.cala.vg@gmail.com"} />
+                </a>
             </div>
             <Map />
         </section>

@@ -14,16 +14,18 @@ export const ActionButton: React.FC<ActionButtonProps> = ({ text, type, onClick 
                 w-full bg-primary-500 p-4 shadow-lg rounded-xl text-white
                 cursor-pointer font-medium text-foreground
                 transition-colors duration-300
-                hover:bg-primary-400"
+                hover:bg-secondary-500 hover:text-primary-500"
                     onClick={onClick}>
                     {text}
                 </button>
             )}
             {type === 'secondary' && (
                 <button className="
-                    w-full bg-white py-4 shadow-lg rounded-xl text-primary-1200
+                    w-full bg-white py-4 rounded-xl text-primary-1200
                     cursor-pointer font-medium text-foreground text-center inline-block
-                    hover:bg-secondary-300"
+                    border border-[#e5e5e5] transition-all duration-300
+                    hover:bg-primary-500 hover:text-white hover:border-primary-700
+                    "
                     onClick={onClick}>
                     {text}
                 </button>
